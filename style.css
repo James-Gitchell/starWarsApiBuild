@@ -4,7 +4,9 @@
     --main-bg: #1b1b2f;
     --button-color:#4e54c8;
     --info-color:#0f3468;
-    
+    --character-color: #0f3460;
+    --cool-text-color: #e94560;
+    --character-li-color: #221655;
 }
 
 * {
@@ -16,10 +18,19 @@ body {
     font-style: ;
     font-family: fantasy;
     background: var(--main-bg);
+    text-align: center;
+    padding: 1rem;  
+    
 
 }
 header {
     margin: 2rem;
+}
+.outline{
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+    -webkit-text-stroke: 1px rgb(149, 170, 47);
 }
 
 button {
@@ -43,9 +54,34 @@ input {
     border: 1px solid #ccc;
 
 }
-.outline{
-    font-size: 40px;
-    font-weight: 700;
-    color: black;
-    -webkit-text-stroke: 1px rgb(149, 170, 47);
+#character {
+    background: var(--character-color);
+    color: var(--cool-text-color);
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    max-width: 600px;
+
+}
+
+#characters {
+    list-style: none;
+    padding:0;
+
+}
+#characters li {
+    background: var(--character-li-color);
+    color: #fff;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+    max-width: 600px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    input {
+        width: 80vw;
+    }
+    
 }
