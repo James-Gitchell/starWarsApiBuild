@@ -1,0 +1,51 @@
+
+:root {
+      --h1-color: #fff;
+    --main-bg: #1b1b2f;
+    --button-color:#4e54c8;
+    --info-color:#0f3468;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: #000;
+    font-style: ;
+    font-family: fantasy;
+    background: var(--main-bg);
+
+}
+header {
+    margin: 2rem;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background: var(--button-color);
+    color: #fff;
+    cursor: pointer;
+
+}
+button:hover {
+    background-color: violet;
+}
+input {
+    width: 30vw;
+    padding: 8px;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+
+}
+.outline{
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+    -webkit-text-stroke: 1px rgb(149, 170, 47);
+}
